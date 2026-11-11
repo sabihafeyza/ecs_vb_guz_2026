@@ -116,13 +116,13 @@
             <div class="flex items-center gap-4">
                 <span class="flex items-center gap-1.5 font-semibold">
                     <span class="w-2 h-2 rounded-full bg-amber-300 animate-ping"></span>
-                    CBS KATMANI: AKTİF
+                    ŞEHİR VE BÖLGE PLANLAMA PORTFOLYOSU
                 </span>
-                <span class="hidden sm:inline opacity-90">WGS84 / ITRF96 • 41°00'N 39°43'E</span>
+                <span class="hidden sm:inline opacity-90">MEKANSAL ANALİZ • CBS • GAYRİMENKUL DEĞERLEME</span>
             </div>
             <div class="flex items-center gap-4">
-                <span class="bg-white/15 px-2 py-0.5 rounded">ÖLÇEK 1:1000 & 1:5000</span>
-                <span class="hidden md:inline">PAFTA NO: SFD-2026</span>
+                <span class="bg-white/15 px-2 py-0.5 rounded">KTÜ ŞBP</span>
+                <span class="hidden md:inline">DİJİTAL CV</span>
             </div>
         </div>
     </div>
@@ -142,10 +142,10 @@
 
             <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
                 <a href="#hakkimda" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Hakkımda</a>
-                <a href="#lejant" class="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Planlama Lejantı</a>
+                <a href="#lejant" class="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Uzmanlık Alanları</a>
                 <a href="#deneyim" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Eğitim & Deneyim</a>
-                <a href="#projeler" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Paftalar & Projeler</a>
-                <a href="#yetkinlikler" class="hover:text-rose-600 dark:hover:text-rose-400 transition-colors">Araçlar</a>
+                <a href="#projeler" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Projeler</a>
+                <a href="#yetkinlikler" class="hover:text-rose-600 dark:hover:text-rose-400 transition-colors">Yetkinlikler</a>
             </nav>
 
             <div class="flex items-center gap-2">
@@ -216,8 +216,8 @@
                             <span>LinkedIn Profilim</span>
                         </a>
                         <a href="#projeler" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold text-sm px-5 py-3 rounded-xl transition-all shadow-md shadow-amber-500/20">
-                            <i data-lucide="map" class="w-4 h-4"></i>
-                            <span>Plan & Projeleri İncele</span>
+                            <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+                            <span>Projeleri İncele</span>
                         </a>
                         <button onclick="window.print()" class="inline-flex items-center gap-2 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium text-sm px-4 py-3 rounded-xl transition-colors">
                             <i data-lucide="printer" class="w-4 h-4"></i>
@@ -226,111 +226,86 @@
                     </div>
                 </div>
 
-                <!-- Sağ İnteraktif Kentsel Planlama & İmar Paftası Görseli -->
+                <!-- Sağ Kurumsal & Profesyonel Uzmanlık Özeti Kartı -->
                 <div class="lg:col-span-5">
-                    <div class="bg-slate-900 dark:bg-slate-950 rounded-2xl p-4 border-2 border-slate-800 shadow-inner text-white relative">
-                        <!-- Harita Üst Başlık ve Kuzey Oku -->
-                        <div class="flex items-center justify-between mb-3 pb-2 border-b border-slate-800 text-xs font-mono">
-                            <span class="flex items-center gap-1.5 text-emerald-400 font-semibold">
-                                <i data-lucide="layers" class="w-4 h-4"></i>
-                                SENTEZ & İMAR PAFTASI
-                            </span>
-                            <span class="px-2 py-0.5 rounded bg-slate-800 text-amber-300">Ada/Parsel Sorgu</span>
-                        </div>
-
-                        <!-- İnteraktif SVG Şehir Planı Haritası -->
-                        <div class="relative rounded-xl overflow-hidden border border-slate-800 bg-[#0f172a]">
-                            <svg viewBox="0 0 360 260" class="w-full h-auto block">
-                                <!-- Topoğrafik Eşyükselti Eğrileri -->
-                                <path d="M-10,40 Q90,10 180,50 T370,30" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
-                                <path d="M-10,220 Q120,190 240,230 T370,210" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
-
-                                <!-- Mavi Akarsu / Ekolojik Koridor -->
-                                <path d="M 0,135 Q 100,115 185,145 T 360,120" fill="none" stroke="#0ea5e9" stroke-width="18" stroke-linecap="round" opacity="0.25"/>
-                                <path d="M 0,135 Q 100,115 185,145 T 360,120" fill="none" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
-
-                                <!-- Ana Ulaşım Aksları (Bulvar ve Caddeler) -->
-                                <line x1="175" y1="0" x2="155" y2="260" stroke="#475569" stroke-width="10"/>
-                                <line x1="175" y1="0" x2="155" y2="260" stroke="#f8fafc" stroke-width="1.2" stroke-dasharray="6 6"/>
-                                <line x1="0" y1="75" x2="360" y2="90" stroke="#475569" stroke-width="8"/>
-                                <line x1="0" y1="195" x2="360" y2="180" stroke="#475569" stroke-width="8"/>
-
-                                <!-- 1. BÖLGE: Yeşil Alan & Kent Parkı (Yeşil) -->
-                                <g class="map-parcel" onclick="selectZone('Kent Parkı & Ekolojik Koridor', 'Kentsel ısı adası etkisini azaltan, yaya sürekliliği sağlayan aktif yeşil alan ve rekreasyon kuşağı.', 'Park / Yeşil Alan (1/1000)')">
-                                    <rect x="18" y="15" width="138" height="48" rx="6" fill="#10b981" fill-opacity="0.85" stroke="#6ee7b7" stroke-width="1.5"/>
-                                    <circle cx="45" cy="39" r="9" fill="#047857"/>
-                                    <circle cx="70" cy="34" r="7" fill="#047857"/>
-                                    <circle cx="95" cy="42" r="10" fill="#047857"/>
-                                    <text x="26" y="55" fill="#ecfdf5" font-size="9" font-family="monospace" font-weight="bold">PARK & REKREASYON</text>
-                                </g>
-
-                                <!-- 2. BÖLGE: Ticaret & MİA Alanı (Kırmızı/Mercan) -->
-                                <g class="map-parcel" onclick="selectZone('Merkezi İş Alanı (MİA) & Ticaret', 'Ulaşım düğüm noktasında konumlanan, yüksek erişilebilirliğe ve yüksek arsa birim değerine sahip ticaret bölgesi.', 'Ticaret + Hizmet (Emsal: 2.00)')">
-                                    <rect x="190" y="15" width="150" height="58" rx="6" fill="#ef4444" fill-opacity="0.85" stroke="#fca5a5" stroke-width="1.5"/>
-                                    <rect x="205" y="25" width="28" height="20" rx="2" fill="#991b1b"/>
-                                    <rect x="242" y="25" width="38" height="20" rx="2" fill="#991b1b"/>
-                                    <rect x="290" y="25" width="35" height="20" rx="2" fill="#991b1b"/>
-                                    <text x="202" y="64" fill="#fef2f2" font-size="9" font-family="monospace" font-weight="bold">TİCARET & DEĞERLEME</text>
-                                </g>
-
-                                <!-- 3. BÖLGE: Gelişme Konut Alanı (Turuncu/Kehribar) -->
-                                <g class="map-parcel" onclick="selectZone('Sürdürülebilir Konut Dokusu', 'Nüfus projeksiyonlarına uygun yoğunlukta, yürünebilir komşuluk birimi ilkeleriyle tasarlanmış konut adaları.', 'Konut Alanı (Ayrık Nizam 4 Kat)')">
-                                    <rect x="18" y="155" width="125" height="30" rx="5" fill="#f59e0b" fill-opacity="0.9" stroke="#fde68a" stroke-width="1.5"/>
-                                    <rect x="18" y="206" width="122" height="40" rx="5" fill="#d97706" fill-opacity="0.9" stroke="#fde68a" stroke-width="1.5"/>
-                                    <text x="28" y="174" fill="#fffbeb" font-size="9" font-family="monospace" font-weight="bold">KONUT ADASI (A-4)</text>
-                                    <text x="28" y="230" fill="#fffbeb" font-size="9" font-family="monospace" font-weight="bold">GELİŞME KONUT</text>
-                                </g>
-
-                                <!-- 4. BÖLGE: Sosyal & Kültürel Donatı Alanı (Mavi) -->
-                                <g class="map-parcel" onclick="selectZone('Sosyal & Kültürel Donatı Alanı', 'Eğitim, sağlık ve kültürel tesislerin 500m yürüme yarıçapı (buffer) erişilebilirlik analizine göre konumlandırılması.', 'Kamusal Donatı Alanı')">
-                                    <rect x="178" y="198" width="82" height="48" rx="6" fill="#3b82f6" fill-opacity="0.85" stroke="#93c5fd" stroke-width="1.5"/>
-                                    <text x="186" y="226" fill="#eff6ff" font-size="8.5" font-family="monospace" font-weight="bold">SOSYAL DONATI</text>
-                                </g>
-
-                                <!-- 5. BÖLGE: CBS & Uydu Analiz Katmanı (Mor) -->
-                                <g class="map-parcel" onclick="selectZone('CBS & Uydu Görüntüsü Analitiği', 'Uzaktan algılama, NDVI yeşil alan indeksi ve mekansal değer enterpolasyon haritalarının üretildiği analitik katman.', 'CBS / Raster Veri Katmanı')">
-                                    <rect x="270" y="198" width="72" height="48" rx="6" fill="#8b5cf6" fill-opacity="0.85" stroke="#c4b5fd" stroke-width="1.5"/>
-                                    <text x="278" y="226" fill="#f5f3ff" font-size="8.5" font-family="monospace" font-weight="bold">CBS ANALİZ</text>
-                                </g>
-
-                                <!-- CBS Erişilebilirlik Çemberi (Buffer Analizi Noktası) -->
-                                <circle cx="265" cy="112" r="24" fill="#14b8a6" fill-opacity="0.2" stroke="#2dd4bf" stroke-width="1.2" stroke-dasharray="3 3" class="gis-pulse"/>
-                                <circle cx="265" cy="112" r="5" fill="#fbbf24" stroke="#ffffff" stroke-width="1.5"/>
-
-                                <!-- Kuzey Oku (North Arrow) -->
-                                <g transform="translate(332, 112)">
-                                    <circle cx="0" cy="0" r="14" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
-                                    <polygon points="0,-10 4,6 0,2 -4,6" fill="#10b981"/>
-                                    <text x="-3.5" y="-12" fill="#e2e8f0" font-size="7" font-family="monospace" font-weight="bold">K</text>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <!-- İnteraktif Parsel Bilgi Kutusu -->
-                        <div class="mt-3 p-3 rounded-xl bg-slate-800/90 border border-slate-700 flex items-start justify-between gap-3">
+                    <div class="bg-slate-50 dark:bg-slate-800/60 rounded-2xl p-6 border border-slate-200/80 dark:border-slate-700/80 shadow-sm space-y-5">
+                        <!-- Profil Başlığı -->
+                        <div class="flex items-center gap-4 pb-4 border-b border-slate-200 dark:border-slate-700">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-600 via-teal-600 to-sky-600 text-white flex items-center justify-center font-extrabold text-xl shadow-md shrink-0">
+                                SFD
+                            </div>
                             <div>
-                                <div class="flex items-center gap-2">
-                                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                                    <span id="zone-title" class="text-xs font-bold text-white">Haritadaki İmar Adalarına Tıklayın</span>
-                                </div>
-                                <p id="zone-desc" class="text-[11px] text-slate-300 mt-1 leading-snug">
-                                    Planlama kararları, arazi kullanım lejantı ve taşınmaz değerleme katmanlarını incelemek için yukarıdaki renkli bölgeleri seçebilirsiniz.
-                                </p>
+                                <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-bold">PROFESYONEL PROFİL</span>
+                                <h2 class="text-base font-bold text-slate-900 dark:text-white">Mekansal Planlama & Değerleme</h2>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Karadeniz Teknik Üniversitesi Mezunu</p>
                             </div>
-                            <span id="zone-badge" class="text-[10px] font-mono px-2 py-1 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 shrink-0">
-                                Lejant Aktif
-                            </span>
                         </div>
 
-                        <!-- Ölçek Çubuğu -->
-                        <div class="mt-2.5 flex items-center justify-between text-[10px] font-mono text-slate-400">
-                            <div class="flex items-center gap-1.5">
-                                <span>0</span>
-                                <div class="w-16 h-1.5 bg-gradient-to-r from-white via-slate-500 to-emerald-400 rounded-xs"></div>
-                                <span>100m</span>
-                                <span>250m</span>
+                        <!-- Odak Noktaları Listesi -->
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800">
+                                <span class="p-2 rounded-lg bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 shrink-0">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <h3 class="text-xs font-bold text-slate-900 dark:text-white">İmar Planlama & Kentsel Gelişim</h3>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Nazım ve Uygulama İmar Planları, kentsel tasarım ve mevzuat analizi.</p>
+                                </div>
                             </div>
-                            <span>ÇİZİM: S. FEYZA DEMİRCİ</span>
+
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800">
+                                <span class="p-2 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 shrink-0">
+                                    <i data-lucide="trending-up" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <h3 class="text-xs font-bold text-slate-900 dark:text-white">Gayrimenkul Değerleme & Fizibilite</h3>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Emsal karşılaştırma, imar hakları incelemesi ve bölgesel pazar araştırması.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800">
+                                <span class="p-2 rounded-lg bg-purple-100 dark:bg-purple-950 text-purple-600 dark:text-purple-400 shrink-0">
+                                    <i data-lucide="layers" class="w-4 h-4"></i>
+                                </span>
+                                <div>
+                                    <h3 class="text-xs font-bold text-slate-900 dark:text-white">CBS (GIS) & Uzaktan Algılama</h3>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">ArcGIS, QGIS ve uydu görüntüleri ile çok katmanlı mekansal veri analitiği.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Yazılım Yetkinlik Göstergeleri -->
+                        <div class="pt-2 space-y-2.5">
+                            <div class="text-[11px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 font-semibold">TEMEL YAZILIM YETKİNLİKLERİ</div>
+                            <div class="space-y-2">
+                                <div>
+                                    <div class="flex justify-between text-xs font-semibold mb-1">
+                                        <span>ArcGIS / QGIS (CBS Analitiği)</span>
+                                        <span class="text-emerald-600 dark:text-emerald-400">İleri Seviye</span>
+                                    </div>
+                                    <div class="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                                        <div class="bg-gradient-to-r from-emerald-500 to-teal-500 h-full rounded-full" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-semibold mb-1">
+                                        <span>AutoCAD / Netcad (Plan Çizimi)</span>
+                                        <span class="text-sky-600 dark:text-sky-400">İleri Seviye</span>
+                                    </div>
+                                    <div class="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                                        <div class="bg-gradient-to-r from-sky-500 to-blue-500 h-full rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-xs font-semibold mb-1">
+                                        <span>Taşınmaz Değerleme & Raporlama</span>
+                                        <span class="text-amber-600 dark:text-amber-400">Yetkin</span>
+                                    </div>
+                                    <div class="w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                                        <div class="bg-gradient-to-r from-amber-500 to-orange-500 h-full rounded-full" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -342,16 +317,16 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2.5">
                     <span class="w-3 h-6 rounded-sm bg-gradient-to-b from-emerald-500 via-amber-500 to-sky-500"></span>
-                    <h2 class="text-lg font-bold tracking-tight">Mekansal Planlama & Çalışma Lejantı</h2>
+                    <h2 class="text-lg font-bold tracking-tight">Temel Uzmanlık & Çalışma Alanları</h2>
                 </div>
-                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">STANDART PLAN GÖSTERİMİ</span>
+                <span class="text-xs font-mono text-slate-500 dark:text-slate-400">DISIPLINLERARASI ODAK</span>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <!-- Lejant 1: Yeşil -->
                 <div class="bg-gradient-to-br from-emerald-500 to-teal-600 text-white rounded-2xl p-5 shadow-md shadow-emerald-600/15 relative overflow-hidden">
                     <i data-lucide="compass" class="w-16 h-16 absolute -right-3 -bottom-3 opacity-15"></i>
-                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">LEJANT 01 • PLANLAMA</div>
+                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">ALAN 01 • PLANLAMA</div>
                     <h3 class="font-bold text-base mt-1">Kentsel & Bölgesel Planlama</h3>
                     <p class="text-xs text-emerald-50 mt-2 leading-relaxed">
                         1/25.000, 1/5000 Nazım ve 1/1000 Uygulama İmar Planları, kentsel gelişim ve yeşil altyapı kurgusu.
@@ -361,7 +336,7 @@
                 <!-- Lejant 2: Turuncu/Kehribar -->
                 <div class="bg-gradient-to-br from-amber-500 to-orange-600 text-white rounded-2xl p-5 shadow-md shadow-amber-600/15 relative overflow-hidden">
                     <i data-lucide="building-2" class="w-16 h-16 absolute -right-3 -bottom-3 opacity-15"></i>
-                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">LEJANT 02 • DEĞERLEME</div>
+                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">ALAN 02 • DEĞERLEME</div>
                     <h3 class="font-bold text-base mt-1">Gayrimenkul Değerleme</h3>
                     <p class="text-xs text-amber-50 mt-2 leading-relaxed">
                         İmar hakları (TAKS/KAKS), emsal karşılaştırma, bölgesel pazar analizi ve taşınmaz değer haritalaması.
@@ -371,7 +346,7 @@
                 <!-- Lejant 3: Mor -->
                 <div class="bg-gradient-to-br from-purple-600 to-indigo-600 text-white rounded-2xl p-5 shadow-md shadow-purple-600/15 relative overflow-hidden">
                     <i data-lucide="satellite" class="w-16 h-16 absolute -right-3 -bottom-3 opacity-15"></i>
-                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">LEJANT 03 • CBS / GIS</div>
+                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">ALAN 03 • CBS / GIS</div>
                     <h3 class="font-bold text-base mt-1">CBS & Uydu Analitiği</h3>
                     <p class="text-xs text-purple-50 mt-2 leading-relaxed">
                         ArcGIS & QGIS ile çok katmanlı mekansal sorgulama, uzaktan algılama ve arazi örtüsü değişimi.
@@ -381,7 +356,7 @@
                 <!-- Lejant 4: Mavi -->
                 <div class="bg-gradient-to-br from-sky-500 to-blue-600 text-white rounded-2xl p-5 shadow-md shadow-sky-600/15 relative overflow-hidden">
                     <i data-lucide="map-pinned" class="w-16 h-16 absolute -right-3 -bottom-3 opacity-15"></i>
-                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">LEJANT 04 • TASARIM</div>
+                    <div class="text-[11px] font-mono uppercase tracking-wider opacity-85">ALAN 04 • TASARIM</div>
                     <h3 class="font-bold text-base mt-1">Kentsel Tasarım & Dönüşüm</h3>
                     <p class="text-xs text-sky-50 mt-2 leading-relaxed">
                         Kamusal mekan kalitesi, yaya erişilebilirliği, ulaşım kurgusu ve afet duyarlı kentsel dönüşüm.
@@ -693,7 +668,7 @@
     <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-slate-500">
         <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>&copy; 2026 Sabiha Feyza Demirci • Şehir ve Bölge Plancısı</p>
-            <p class="font-mono">PAFTA: SFD-CV • GitHub Pages</p>
+            <p class="font-mono">Dijital Portfolyo & CV • GitHub Pages</p>
         </div>
     </footer>
 
@@ -701,13 +676,6 @@
     <script>
         // İkonları oluştur
         lucide.createIcons();
-
-        // İnteraktif Şehir Planı Haritası Parsel Seçimi
-        function selectZone(title, desc, badge) {
-            document.getElementById('zone-title').textContent = title;
-            document.getElementById('zone-desc').textContent = desc;
-            document.getElementById('zone-badge').textContent = badge;
-        }
 
         // Karanlık / Aydınlık Mod Geçişi
         const themeToggleBtn = document.getElementById('theme-toggle');
