@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabiha Feyza Demirci | Şehir Plancısı & Gayrimenkul Değerleme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent: #0284c7;
+            --accent-hover: #0369a1;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Üst Menü */
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Ana Kapsayıcı */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        /* Hero / Giriş Bölümü */
+        .hero {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 3rem 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.35rem 0.85rem;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.8px;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 720px;
+            margin-bottom: 1.75rem;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.4rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-secondary);
+            background: #f1f5f9;
+        }
+
+        /* Bölüm Başlıkları */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        /* Kart Yapıları */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            gap: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .card-subtitle {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            background: #f1f5f9;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.93rem;
+        }
+
+        /* Yetkinlik Etiketleri */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .skill-tag {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Alt Bilgi */
+        footer {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+            .hero h1 {
+                font-size: 1.85rem;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="logo">S. Feyza Demirci</a>
+            <ul class="nav-links">
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#deneyim">Eğitim & Deneyim</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#yetkinlikler">Yetkinlikler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Giriş / Hero -->
+        <section class="hero" id="hakkimda">
+            <span class="hero-badge">Şehir ve Bölge Plancısı</span>
+            <h1>Sabiha Feyza Demirci</h1>
+            <p>
+                Karadeniz Teknik Üniversitesi Şehir ve Bölge Planlama bölümü mezunuyum. Mekansal planlama, coğrafi bilgi sistemleri (CBS/GIS), uydu görüntüsü analitiği ve gayrimenkul değerleme alanlarında veri odaklı analizler ve sürdürülebilir kentsel çözümler üretiyorum.
+            </p>
+            <div class="btn-group">
+                <a href="https://www.linkedin.com/in/sabiha-feyza-demirci-313237242" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    LinkedIn Profilim
+                </a>
+                <a href="mailto:ornek@email.com" class="btn btn-outline">
+                    E-posta Gönder
+                </a>
+                <!-- CV PDF dosyanı repo'ya eklediğinde href="cv.pdf" olarak kullanabilirsin -->
+                <a href="#" class="btn btn-outline">
+                    Özgeçmişi İndir (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- Eğitim & Deneyim -->
+        <section id="deneyim">
+            <h2 class="section-title">Eğitim & Deneyim</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Karadeniz Teknik Üniversitesi</h3>
+                        <span class="card-date">Lisans</span>
+                    </div>
+                    <div class="card-subtitle">Şehir ve Bölge Planlama</div>
+                    <p>Kentsel tasarım, bölge planlama, imar hukuku, mekansal veri analizi ve sürdürülebilir kentsel gelişim odaklı akademik eğitim.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">[Kurum / Şirket Adı]</h3>
+                        <span class="card-date">[Tarih Aralığı]</span>
+                    </div>
+                    <div class="card-subtitle">Şehir Plancısı / Gayrimenkul Değerleme [Pozisyon]</div>
+                    <p>İmar planı araştırmaları, taşınmaz değerleme analizleri, mekansal veri işleme ve saha-raporlama süreçlerinin yürütülmesi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seçili Projeler & Çalışmalar -->
+        <section id="projeler">
+            <h2 class="section-title">Seçili Projeler & Çalışmalar</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Mekansal Planlama & Kentsel Gelişim Analizi</h3>
+                        <span class="card-date">Planlama</span>
+                    </div>
+                    <div class="card-subtitle">Bölgesel ve Kentsel Ölçek Çalışmaları</div>
+                    <p>Arazi kullanım kararları, ulaşım kurgusu, demografik projeksiyonlar ve çevresel sürdürülebilirlik ilkeleri doğrultusunda hazırlanan mekansal planlama projeleri.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Gayrimenkul Değerleme & Pazar Analizi</h3>
+                        <span class="card-date">Değerleme</span>
+                    </div>
+                    <div class="card-subtitle">Taşınmaz Geliştirme ve Fizibilite</div>
+                    <p>Bölgesel emsal karşılaştırmaları, imar durumu incelemeleri ve mekansal erişilebilirlik kriterlerinin taşınmaz değerine etkisini ölçen analitik çalışmalar.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">CBS ve Uydu Görüntüsü Analitiği</h3>
+                        <span class="card-date">CBS / Uzaktan Algılama</span>
+                    </div>
+                    <div class="card-subtitle">Mekansal Veri Görselleştirme</div>
+                    <p>Uydu görüntüleri ve coğrafi veri katmanları kullanılarak kentsel yayılma, yeşil alan değişimi ve arazi örtüsü analizlerinin haritalandırılması.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">[Proje Başlığı Ekleyin]</h3>
+                        <span class="card-date">[Yıl]</span>
+                    </div>
+                    <div class="card-subtitle">[Proje Konumu / Kapsamı]</div>
+                    <p>Projenin amacı, kullanılan yazılımlar (ArcGIS, QGIS, AutoCAD, Netcad vb.) ve elde edilen çıktılar hakkında kısa özet bilgi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yetkinlikler & Araçlar -->
+        <section id="yetkinlikler">
+            <h2 class="section-title">Uzmanlık Alanları & Araçlar</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Şehir ve Bölge Planlama</span>
+                <span class="skill-tag">Gayrimenkul Değerleme</span>
+                <span class="skill-tag">Coğrafi Bilgi Sistemleri (ArcGIS / QGIS)</span>
+                <span class="skill-tag">AutoCAD & Netcad</span>
+                <span class="skill-tag">Uydu Görüntüsü Analitiği</span>
+                <span class="skill-tag">İmar Mevzuatı & Planlama</span>
+                <span class="skill-tag">Kentsel Tasarım</span>
+                <span class="skill-tag">Mekansal Veri Analizi</span>
+            </div>
+        </section>
+
+        <!-- İletişim -->
+        <section id="iletisim">
+            <h2 class="section-title">İletişim</h2>
+            <div class="card">
+                <p style="margin-bottom: 1rem;">
+                    Projeler, iş birlikleri veya profesyonel fırsatlar için benimle LinkedIn üzerinden veya e-posta yoluyla iletişime geçebilirsiniz.
+                </p>
+                <div class="btn-group">
+                    <a href="https://www.linkedin.com/in/sabiha-feyza-demirci-313237242" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        linkedin.com/in/sabiha-feyza-demirci
+                    </a>
+                    <a href="mailto:ornek@email.com" class="btn btn-outline">
+                        ornek@email.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sabiha Feyza Demirci. GitHub Pages üzerinde barındırılmaktadır.</p>
+    </footer>
+
+</body>
+</html>
